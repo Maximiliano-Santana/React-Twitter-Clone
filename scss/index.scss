@@ -4,6 +4,7 @@ body{
 
 button{
     padding: 0px;
+    margin: 20px;
     background-color: white;
     width: 100px;
     height: 40px;
@@ -18,4 +19,8 @@ button{
     &:active{
         scale: 0.9
     }
+}
+
+#App{
+    color: white;
 }
