@@ -1,42 +1,58 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.followCard{
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.followCard:hover{
+    background-color: #3C3C3C;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.followCard__header{
+    display: flex;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.followCard__header img{
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
 }
 
-.card {
-  padding: 2em;
+.followCard__header__info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.followCard__header__info span{
+    font-size: 12px;
+    cursor: pointer;
+    color: gray;
+}
+
+.followCard__header__info strong{
+    cursor: pointer;
+}
+
+.followCard__header__info strong:hover{
+    text-decoration:underline;
+}
+
+.followCard aside button{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: #292929;
+    border-radius: 20px;
+    width: 75px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 14px;
 }
